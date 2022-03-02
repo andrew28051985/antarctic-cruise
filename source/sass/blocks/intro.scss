@@ -1,0 +1,8 @@
+.intro__link {
+  color: $color-neon-blue;
+
+  &:hover,
+  &:focus {
+    color: $color-torch-red;
+  }
+}

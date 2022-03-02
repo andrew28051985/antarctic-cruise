@@ -639,6 +639,15 @@ button,
   pointer-events: none;
 }
 
+.intro__link {
+  color: #2c39f2;
+}
+
+.intro__link:hover,
+.intro__link:focus {
+  color: #ff1553;
+}
+
 .modal {
   position: fixed;
   top: 0;
