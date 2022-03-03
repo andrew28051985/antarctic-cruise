@@ -1,0 +1,22 @@
+.page-header {
+  padding-top: 35px;
+
+  background-color: $color-neon-blue;
+
+  @include vp-1279 {
+    padding-top: 30px;
+  }
+  @include vp-767 {
+    padding-top: 20px;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__wrapper picture {
+  flex-shrink: 0;
+}

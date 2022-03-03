@@ -1,0 +1,33 @@
+.icon {
+  fill: $color-alice-blue;
+}
+
+.icon__facebook {
+  width: 11px;
+  height: 20px;
+
+  @include vp-1279 {
+    width: 9px;
+    height: 16px;
+  }
+}
+
+.icon__instagram {
+  width: 20px;
+  height: 20px;
+
+  @include vp-1279 {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.icon__twitter {
+  width: 20px;
+  height: 16px;
+
+  @include vp-1279 {
+    width: 16px;
+    height: 13px;
+  }
+}

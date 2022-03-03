@@ -18,24 +18,111 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+
+      <header class="page-header">
+        <div class="container">
+          <div class="page-header__wrapper">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/logo-mini.svg ">
+              <source media="(max-width: 1279px)" srcset="img/svg/logo-medium.svg ">
+              <img src="img/svg/logo-maxi.svg" class="logo" alt="Логотип компании по Крузы в Антарктику в виде гор" width="70" height="38">
+            </picture>
+            <button class="page-header__toggle-nav page-header__toggle-nav--no-js" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="page-header__wrapper-nav page-header__wrapper-nav--no-js-nav">
+              <nav class="main-nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a href="#" class="main-nav__item-link">
+                      <span>Преимущества</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="#" class="main-nav__item-link">
+                      <span>Направления</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="#" class="main-nav__item-link">
+                      <span>Ближайшие круизы</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="#" class="main-nav__item-link">
+                      <span>Контакты</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
       </header>
+
       <main>
-        <section class="intro">
+        <section class="cruise">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <h1>Круизы в Антарктику </h1>
+            <p>Волшебный мир айсбергов и пингвинов</p>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+
+      <footer class="page-footer">
+        <div class="container">
+          <div class="page-footer__wrapper">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/logo-mini.svg ">
+              <source media="(max-width: 1279px)" srcset="img/svg/logo-medium.svg ">
+              <img src="img/svg/logo-maxi.svg" class="logo" alt="Логотип компании по Крузы в Антарктику в виде гор" width="70" height="38">
+            </picture>
+
+            <div class="page-footer__wrapper-nav page-footer__wrapper-nav--no-js-nav">
+              <nav class="main-nav">
+                <ul class="main-nav__list main-nav__list--footer">
+                  <li class="main-nav__item main-nav__item--footer">
+                    <a href="#" class="main-nav__item-link main-nav__item-link--footer">
+                      <span>Преимущества</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--footer">
+                    <a href="#" class="main-nav__item-link main-nav__item-link--footer">
+                      <span>Направления</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--footer">
+                    <a href="#" class="main-nav__item-link main-nav__item-link--footer">
+                      <span>Ближайшие круизы</span>
+                    </a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--footer">
+                    <a href="#" class="main-nav__item-link main-nav__item-link--footer">
+                      <span>Контакты</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="page-footer__wrapper-social">
+              <svg class="icon icon__facebook" width="11" height="20">
+                <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+              </svg>
+              <svg class="icon icon__instagram" width="20" height="20">
+                <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
+              </svg>
+              <svg class="icon icon__twitter" width="20" height="16">
+                <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
+              </svg>
+            </div>
+
+          </div>
+        </div>
       </footer>
+
     </div>
+
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
@@ -66,5 +153,6 @@
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
+
   </body>
 </html>
