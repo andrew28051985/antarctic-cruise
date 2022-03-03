@@ -17,13 +17,23 @@
   opacity: 0;
 
   transition: opacity $trans-modal,
-    transform $trans-modal,
-    visibility $trans-modal;
+  transform $trans-modal,
+  visibility $trans-modal;
 
   pointer-events: none;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
+
+  &--nav {
+    display: none;
+
+    background-color: $color-navigation-transparent;
+
+    @include vp-767 {
+      display: block;
+    }
+  }
 
   &::-webkit-scrollbar {
     display: none;
@@ -42,6 +52,13 @@
 
     @include vp-767 {
       padding: 60px 16px;
+
+      &--nav {
+        align-items: flex-start;
+        margin-left: auto;
+        padding: 0 0;
+        padding-left: 35px;
+      }
     }
   }
 
@@ -67,7 +84,28 @@
     @include vp-767 {
       width: 100%;
       padding: 20px;
+
+      &--nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 285px;
+        height: 100vh;
+        padding: 0;
+        padding: 20px 15px;
+      }
     }
+  }
+  &__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 33px;
+  }
+  &__content-wrapper-nav {
+    padding-left: 10px;
   }
 
   &__close-btn {
@@ -83,6 +121,10 @@
     background: $color-transparent;
     border: none;
     cursor: pointer;
+
+    &--nav {
+      position: static;
+    }
   }
 
   &--responsive {

@@ -27,10 +27,10 @@
               <source media="(max-width: 1279px)" srcset="img/svg/logo-medium.svg ">
               <img src="img/svg/logo-maxi.svg" class="logo" alt="Логотип компании по Крузы в Антарктику в виде гор" width="70" height="38">
             </picture>
-            <button class="page-header__toggle-nav page-header__toggle-nav--no-js" type="button">
+            <button class="page-header__toggle-nav page-header__toggle-nav--no-js page-header__toggle-nav--open-nav" type="button" data-open-modal="navigation">
               <span class="visually-hidden">Открыть меню</span>
             </button>
-            <div class="page-header__wrapper-nav page-header__wrapper-nav--no-js-nav">
+            <div class="page-header__wrapper-nav page-header__wrapper-nav--closed-nav">
               <nav class="main-nav">
                 <ul class="main-nav__list">
                   <li class="main-nav__item">
@@ -133,6 +133,48 @@
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>
           </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--preload modal--nav" data-modal="navigation">
+      <div class="modal__wrapper modal__wrapper--nav">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content modal__content--nav">
+          <div class="modal__content-wrapper">
+            <img src="img/svg/logo-mini-menu.svg" class="logo" alt="Логотип компании по Крузы в Антарктику в виде гор" width="42" height="22">
+            <button class="modal__close-btn modal__close-btn--nav btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="modal__content-wrapper-nav">
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__item-link">
+                    <span>Преимущества</span>
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__item-link">
+                    <span>Направления</span>
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__item-link">
+                    <span>Ближайшие круизы</span>
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__item-link">
+                    <span>Контакты</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
