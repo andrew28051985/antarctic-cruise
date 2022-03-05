@@ -10,4 +10,12 @@
     width: 42px;
     height: 22px;
   }
+
+  &--no-active {
+    opacity: 0;
+
+    @media (min-width: $vp-768) {
+      opacity: 1;
+    }
+  }
 }

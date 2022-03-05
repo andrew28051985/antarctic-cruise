@@ -7,6 +7,7 @@ export class Modals {
     this._focusLock = new FocusLock();
 
     this._modalOpenElements = document.querySelectorAll('[data-open-modal]');
+    this._logoNav = document.querySelector('.logo--header');
     this._openedModalElement = null;
     this._modalName = null;
     this._enableScrolling = true;
@@ -140,6 +141,10 @@ export class Modals {
       return;
     }
 
+    if (modal && modal.classList.contains('modal--nav')) {
+      this._logoNav.classList.add('logo--no-active');
+    }
+
     document.removeEventListener('click', this._documentClickHandler);
 
     this._openedModalElement = document.querySelector('.modal.is-active');
@@ -177,6 +182,10 @@ export class Modals {
 
     if (!modal || !modal.classList.contains('is-active')) {
       return;
+    }
+
+    if (modal && modal.classList.contains('modal--nav')) {
+      this._logoNav.classList.remove('logo--no-active');
     }
 
     if (this._lockFocus) {

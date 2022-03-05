@@ -693,6 +693,10 @@ button,
   height: 38px;
 }
 
+.logo--no-active {
+  opacity: 0;
+}
+
 .page-footer {
   padding: 50px 0;
   background-color: #011c40;
@@ -976,6 +980,12 @@ button,
   }
 }
 
+@media (min-width: 768px) {
+  .logo--no-active {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 1279px) {
   .container {
     padding: 0 45px;
@@ -1167,6 +1177,7 @@ button,
     height: 100vh;
     padding: 0;
     padding: 20px 15px;
+    margin-left: auto;
   }
 
   .modal--fit-content .modal__content {
