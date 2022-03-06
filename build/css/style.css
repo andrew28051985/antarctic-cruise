@@ -871,6 +871,53 @@ button,
   line-height: 24px;
 }
 
+.travel {
+  padding: 120px 0;
+}
+
+.travel__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.travel__text {
+  margin-right: 88px;
+}
+
+.travel__text h2 {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.travel__text p {
+  margin: 0;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.travel__image {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 560px;
+  height: 301px;
+}
+
+.travel__image img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1106,6 +1153,37 @@ button,
     font-size: 18px;
     line-height: 22px;
   }
+
+  .travel {
+    padding: 100px 0;
+  }
+
+  .travel__text {
+    margin-right: 30px;
+  }
+
+  .travel__text h2 {
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .travel__image {
+    position: relative;
+    width: 324px;
+    height: 264px;
+    padding-bottom: 56.25%/3;
+    overflow: hidden;
+  }
+
+  .travel__image img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1238,6 +1316,27 @@ button,
 
   .cruise__wrapper--no-js {
     height: 850px;
+  }
+
+  .travel {
+    padding: 65px 0;
+  }
+
+  .travel__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .travel__text {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .travel__image {
+    width: 290px;
+    height: 186px;
   }
 
   .modal--nav {
