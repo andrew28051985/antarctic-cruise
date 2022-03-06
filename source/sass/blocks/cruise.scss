@@ -1,0 +1,89 @@
+.cruise {
+  width: 100%;
+  margin-top: -108px;
+
+  background: $color-neon-blue url("../img/content/bg-main-maxi.jpg") no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @include vp-1279 {
+    background: $color-neon-blue url("../img/content/bg-main-mini.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  @include vp-374 {
+    background: $color-neon-blue url("../img/content/bg-main-mini.jpg") no-repeat;
+    background-position: 50% 45px;
+    background-size: cover;
+  }
+
+  &--no-js {
+    @include vp-767 {
+      margin-top: -325px;
+    }
+  }
+}
+
+.cruise__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 650px;
+  padding-left: 95px;
+
+  color: $color-alice-blue;
+
+  @include vp-1279 {
+    height: 638px;
+    padding-left: 0;
+  }
+  @include vp-767 {
+    height: 500px;
+  }
+
+  & h1 {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 66px;
+
+    @include vp-1279 {
+      margin-bottom: 29px;
+
+      font-size: 50px;
+      line-height: 61px;
+    }
+    @include vp-767 {
+      margin-bottom: 25px;
+
+      font-size: 36px;
+      line-height: 45px;
+    }
+  }
+
+  & p {
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    @include vp-1279 {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &--no-js {
+    @include vp-767 {
+      height: 850px;
+    }
+  }
+}

@@ -15,6 +15,7 @@
   position: relative;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -29,6 +30,14 @@
       display: block;
 
       background-color: $color-transparent;
+    }
+    &--no-js-nav {
+      flex-basis: 100%;
+      margin-top: 20px;
+
+      & a {
+        color: $color-alice-blue;
+      }
     }
     &--opened-nav {
       position: absolute;
@@ -74,6 +83,12 @@
 
       background-color: $color-alice-blue;
       box-shadow: 0 4px 0 0 $color-alice-blue, 0 8px 0 0 $color-alice-blue;
+    }
+  }
+
+  &--no-js {
+    @include vp-767 {
+      display: none;
     }
   }
 }

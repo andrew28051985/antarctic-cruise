@@ -1,4 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
+import {getNavNoJs} from './utils/no-js-nav';
 import {initModals} from './modules/modals/init-modals';
 
 // ---------------------------------
@@ -9,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  getNavNoJs();
 
   // Modules
   // ---------------------------------
