@@ -15,6 +15,12 @@
     background-color: $color-torch-red;
   }
 
+  &--ligth {
+    color: $color-tangaroa;
+
+    background-color: $color-alice-blue;
+  }
+
   &:disabled {
     opacity: 0.5;
 

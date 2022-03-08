@@ -1,0 +1,173 @@
+.next-cruise {
+  padding: 125px 0 90px;
+
+  @include vp-1279 {
+    padding: 100px 0 70px;
+  }
+  @include vp-767 {
+    padding: 65px 0 35px;
+  }
+
+  & h2 {
+    margin: 0;
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    @include vp-767 {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.next-cruise__list {
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @include vp-1279 {
+    display: grid;
+    padding: 0 15px;
+
+    gap: 0 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include vp-767 {
+    display: flex;
+    padding: 0 0;
+  }
+}
+
+.next-cruise__item {
+  position: relative;
+  z-index: 2;
+
+  width: 260px;
+  margin-bottom: 30px;
+  padding: 339px 30px 20px;
+
+  background-image: $tangaroa-to-down;
+
+  @include vp-1279 {
+    width: 309px;
+
+    justify-self: center;
+  }
+  @include vp-767 {
+    width: 270px;
+  }
+
+  & img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: fill;
+  }
+
+  & h3 {
+    position: inherit;
+    z-index: 3;
+
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-alice-blue;
+  }
+
+  &:hover .next-cruise__wrapper {
+    display: flex;
+  }
+}
+
+.next-cruise__wrapper-gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: $tangaroa-to-down;
+}
+
+.next-cruise__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+
+  display: none;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  padding: 30px 25px;
+
+  color: $color-alice-blue;
+
+  background-color: $color-tangaroa;
+
+  @include vp-1279 {
+    padding: 35px;
+  }
+  @include vp-767 {
+    padding: 35px 25px;
+  }
+
+  & h3 {
+    position: static;
+
+    margin-bottom: 13px;
+  }
+
+  & dl {
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  & dd {
+    margin: 0;
+    margin-bottom: 12px;
+
+    font-weight: 400;
+    line-height: 20px;
+    color: $color-quartz;
+  }
+
+  & p {
+    margin: 0;
+  }
+
+  & a {
+    margin: 0;
+    margin-top: auto;
+    padding-left: 47px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
