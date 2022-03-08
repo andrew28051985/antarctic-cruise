@@ -1,0 +1,238 @@
+.booking {
+  position: relative;
+}
+
+.booking img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  @include vp-1279 {
+    object-fit: cover;
+  }
+  object-fit: fill;
+}
+
+.booking__wrapper {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 60px;
+
+  @include vp-1279 {
+    flex-direction: column;
+    padding: 100px 0;
+
+    text-align: center;
+  }
+  @include vp-767 {
+    padding: 65px 0;
+  }
+}
+
+.booking__text {
+  width: 493px;
+
+  font-size: 18px;
+  line-height: 27px;
+
+  @include vp-1279 {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  @include vp-767 {
+    margin-bottom: 40px;
+  }
+
+  & h2 {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+
+    @include vp-1279 {
+      font-size: 34px;
+      line-height: 51px;
+    }
+    @include vp-767 {
+      margin-bottom: 25px;
+
+      font-size: 24px;
+      line-height: 31px;
+    }
+  }
+
+  & p {
+    width: 352px;
+    margin: 0;
+
+    @include vp-1279 {
+      margin: 0 auto;
+    }
+    @include vp-767 {
+      width: 257px;
+
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+.booking__form {
+  width: 403px;
+  padding: 50px;
+
+  background-color: $color-tangaroa;
+  box-shadow: $color-tangaroa-box-shadow;
+
+  @include vp-767 {
+    width: 290px;
+    padding: 40px 30px;
+  }
+
+  & h3 {
+    margin: 0;
+    margin-bottom: 35px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-alice-blue;
+
+    @include vp-767 {
+      line-height: 25px;
+    }
+  }
+}
+
+.booking__form form {
+  display: flex;
+  flex-direction: column;
+
+  & input {
+    margin-bottom: 20px;
+    padding: 11px 16px;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-tangaroa;
+
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border: none;
+      outline: none;
+      opacity: 0.8;
+    }
+  }
+
+  & input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-tangaroa-transparent;
+
+    background-color: $color-alice-blue;
+  }
+
+  & input[type=checkbox] + label {
+    position: relative;
+
+    margin-bottom: 35px;
+    padding-left: 23px;
+
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: right;
+    color: $color-alice-blue;
+
+    cursor: pointer;
+
+    @include vp-767 {
+      margin-bottom: 30px;
+      padding-left: 25px;
+
+      text-align: left;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      border: none;
+      opacity: 0.8;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: 0;
+
+      width: 18px;
+      height: 18px;
+
+      background-color: $color-alice-blue;
+
+      @include vp-767 {
+        top: 3px;
+
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  & input[type=checkbox]:focus + label::before,
+  & input[type=checkbox]:hover + label::before {
+    border: none;
+    opacity: 0.8;
+  }
+
+  & input[type=checkbox]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 3px;
+
+    width: 12px;
+    height: 8px;
+
+    background: url("../img/sprite/icon-checked.svg") no-repeat;
+
+    @include vp-767 {
+      top: 9px;
+      left: 4px;
+    }
+  }
+
+  & button {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+}
