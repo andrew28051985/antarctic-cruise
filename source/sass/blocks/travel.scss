@@ -34,15 +34,8 @@
     margin: 0;
     margin-bottom: 40px;
 
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 42px;
-
     @include vp-1279 {
       margin-bottom: 30px;
-
-      font-size: 26px;
-      line-height: 36px;
     }
   }
 

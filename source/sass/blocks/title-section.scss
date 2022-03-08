@@ -1,0 +1,10 @@
+.title-section {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+
+  @include vp-1279 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
