@@ -1204,6 +1204,7 @@ button,
 }
 
 .booking__form {
+  position: relative;
   width: 403px;
   padding: 50px;
   background-color: #011c40;
@@ -1242,9 +1243,12 @@ button,
 
 .booking__form form input:hover,
 .booking__form form input:focus {
-  border: none;
-  outline: none;
+  outline: 1px solid #f9fbfd;
   opacity: 0.8;
+}
+
+.booking__form form .invalid {
+  border-right: 15px solid red;
 }
 
 .booking__form form input::-webkit-input-placeholder {
@@ -1252,6 +1256,10 @@ button,
   line-height: 21px;
   color: rgba(1, 28, 64, 0.7);
   background-color: #f9fbfd;
+}
+
+.booking__form form input[type=checkbox] {
+  top: 395px;
 }
 
 .booking__form form input[type=checkbox] + label {
@@ -1269,6 +1277,7 @@ button,
 .booking__form form input[type=checkbox] + label:hover::before,
 .booking__form form input[type=checkbox] + label:focus::before {
   border: none;
+  outline: 1px solid #f9fbfd;
   opacity: 0.8;
 }
 
@@ -1285,6 +1294,7 @@ button,
 .booking__form form input[type=checkbox]:focus + label::before,
 .booking__form form input[type=checkbox]:hover + label::before {
   border: none;
+  outline: 1px solid #f9fbfd;
   opacity: 0.8;
 }
 
@@ -1531,6 +1541,14 @@ button,
   pointer-events: auto;
 }
 
+.error {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  font-weight: 600;
+  color: red;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1743,6 +1761,10 @@ button,
 
   .booking__text p {
     margin: 0 auto;
+  }
+
+  .booking__form form input[type=checkbox] {
+    top: 640px;
   }
 
   .contact {
@@ -2010,15 +2032,23 @@ button,
   }
 
   .booking__form {
-    width: 290px;
+    width: 100%;
+    min-width: 290px;
     padding: 40px 30px;
   }
 
   .booking__form h3 {
+    max-width: 374px;
+    margin: 0 auto 35px;
     line-height: 25px;
   }
 
+  .booking__form form input[type=checkbox] {
+    top: 565px;
+  }
+
   .booking__form form input[type=checkbox] + label {
+    width: 230px;
     margin-bottom: 30px;
     padding-left: 25px;
     text-align: left;

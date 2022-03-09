@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {getNavNoJs} from './utils/no-js-nav';
 import {initModals} from './modules/modals/init-modals';
+import {validityForm, sendUserFormData, bookingForm, inputPhone, inputEmail} from './modules/form/form';
 
 // ---------------------------------
 
@@ -19,6 +20,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    validityForm(inputPhone, inputEmail);
+    sendUserFormData(bookingForm);
   });
 });
 

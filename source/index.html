@@ -360,12 +360,12 @@
                 </h3>
                 <form action="https://echo.htmlacademy.ru" method="POST" target="_blank" autocomplete="off">
                   <label class="visually-hidden" for="name">Имя</label>
-                  <input type="text" name="name" id="name" placeholder="Имя">
+                  <input type="text" name="name" id="name" placeholder="Имя" minlength="1" maxlength="50" required>
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input type="phone" name="phone" id="phone" placeholder="Телефон">
-                  <label class="visually-hidden" for="email">Телефон</label>
-                  <input type="email" name="email" id="email" placeholder="Email">
-                  <input class="visually-hidden" type="checkbox" name="personal-data" id="personal-data" checked>
+                  <input type="phone" name="phone" id="phone" placeholder="Телефон" minlength="5" maxlength="11" required>
+                  <label class="visually-hidden" for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Email" required>
+                  <input class="visually-hidden" type="checkbox" name="personal-data" id="personal-data" checked required>
                   <label for="personal-data">Я согласен на обработку моих&nbsp;персональных данных</label>
                   <button class="btn btn--ligth" type="submit">Оставить заявку</button>
                 </form>

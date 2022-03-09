@@ -90,6 +90,8 @@
 }
 
 .booking__form {
+  position: relative;
+
   width: 403px;
   padding: 50px;
 
@@ -97,7 +99,8 @@
   box-shadow: $color-tangaroa-box-shadow;
 
   @include vp-767 {
-    width: 290px;
+    width: 100%;
+    min-width: 290px;
     padding: 40px 30px;
   }
 
@@ -111,6 +114,9 @@
     color: $color-alice-blue;
 
     @include vp-767 {
+      max-width: 374px;
+      margin: 0 auto 35px;
+
       line-height: 25px;
     }
   }
@@ -119,6 +125,7 @@
 .booking__form form {
   display: flex;
   flex-direction: column;
+
 
   & input {
     margin-bottom: 20px;
@@ -133,10 +140,13 @@
 
     &:hover,
     &:focus {
-      border: none;
-      outline: none;
+      outline: 1px solid $color-alice-blue;
       opacity: 0.8;
     }
+  }
+
+  & .invalid {
+    border-right: 15px solid $color-default-red;
   }
 
   & input::-webkit-input-placeholder {
@@ -145,6 +155,17 @@
     color: $color-tangaroa-transparent;
 
     background-color: $color-alice-blue;
+  }
+
+  & input[type=checkbox] {
+    top: 395px;
+
+    @include vp-1279 {
+      top: 640px;
+    }
+    @include vp-767 {
+      top: 565px;
+    }
   }
 
   & input[type=checkbox] + label {
@@ -162,6 +183,7 @@
     cursor: pointer;
 
     @include vp-767 {
+      width: 230px;
       margin-bottom: 30px;
       padding-left: 25px;
 
@@ -171,6 +193,7 @@
     &:hover::before,
     &:focus::before {
       border: none;
+      outline: 1px solid $color-alice-blue;
       opacity: 0.8;
     }
 
@@ -197,6 +220,7 @@
   & input[type=checkbox]:focus + label::before,
   & input[type=checkbox]:hover + label::before {
     border: none;
+    outline: 1px solid $color-alice-blue;
     opacity: 0.8;
   }
 
