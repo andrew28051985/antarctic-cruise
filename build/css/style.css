@@ -1338,15 +1338,15 @@ button,
 .contact__map {
   -ms-flex-negative: 1;
   flex-shrink: 1;
-  max-width: 560px;
+  min-width: 560px;
   height: 306px;
+  background: url("../img/content/map.png") 0 0 no-repeat;
 }
 
-.contact__map img {
+.contact__map img,
+.contact__map iframe {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 
 .contact__text {
@@ -1750,7 +1750,9 @@ button,
   }
 
   .contact__map {
+    width: 100%;
     min-width: 324px;
+    max-width: 560px;
     height: 335px;
     margin-right: 30px;
   }
@@ -2043,8 +2045,7 @@ button,
   }
 
   .contact__map {
-    min-width: 290px;
-    max-width: 100%;
+    min-width: 100%;
     height: 316px;
     margin-right: 0;
   }
