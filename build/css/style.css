@@ -1335,6 +1335,57 @@ button,
   align-items: center;
 }
 
+.contact__map {
+  width: 560px;
+  height: 306px;
+}
+
+.contact__map img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.contact__text p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.contact__text p + p {
+  margin-bottom: 40px;
+}
+
+.contact__text svg + p,
+.contact__text a > p {
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.contact__text svg {
+  margin-right: 10px;
+}
+
+.contact__icon-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.contact__icon-text:last-child {
+  margin-bottom: 0;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1686,6 +1737,16 @@ button,
 
   .booking__text p {
     margin: 0 auto;
+  }
+
+  .contact {
+    padding: 100px 0;
+  }
+
+  .contact__map {
+    width: 324px;
+    height: 335px;
+    margin-right: 30px;
   }
 }
 
