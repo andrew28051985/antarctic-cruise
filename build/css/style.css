@@ -1564,7 +1564,7 @@ button,
 
 .error {
   position: absolute;
-  bottom: 0;
+  bottom: 75px;
   padding: 0;
   font-weight: 600;
   color: red;
@@ -2188,6 +2188,10 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .error {
+    bottom: 60px;
   }
 }
 

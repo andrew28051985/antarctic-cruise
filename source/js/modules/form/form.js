@@ -5,11 +5,12 @@ const inputPhone = bookingForm.querySelector('#phone');
 const inputEmail = bookingForm.querySelector('#email');
 const MIN_LENGTH_PHONE = 5;
 const MAX_LENGTH_PHONE = 11;
+const URL_SERVER = 'https://echo.htmlacademy.ru';
 
 const onInputValueMissing = (evt) => {
   const field = evt.target;
   if (field.validity.valueMissing) {
-    field.setCustomValidity('Заполните обязательное поле.');
+    field.setCustomValidity('Заполните обязательное поле');
     setFormError(field);
   }
 };
@@ -81,37 +82,24 @@ const openErrorAlert = (nameForm) => {
   }
 };
 
-const URL_SERVER = 'https://echo.htmlacademy.ru';
-
 const sendData = ((body, onSuccess, onFail) => {
-  fetch (
-    URL_SERVER,
-    {
-      method: 'POST',
-      body,
-    }
-  )
-    .then((responce) => {
-      if (responce.ok) {
-        onSuccess();
-      } else {
-        onFail();
-      }
-    })
-    .catch(() => {
+  fetch(URL_SERVER, {method: 'POST', body}
+  ).then((responce) => {
+    if (responce.ok) {
+      onSuccess();
+    } else {
       onFail();
-    });
+    }
+  }).catch(() => {
+    onFail();
+  });
 });
 
 const sendUserFormData = (nameForm) => {
-  nameForm.addEventListener("submit", (evt) => {
+  nameForm.addEventListener('submit', (evt) => {
     const field = evt.target;
     evt.preventDefault();
-    sendData (
-      new FormData(evt.target),
-      () => reset(nameForm),
-      () => openErrorAlert(nameForm),
-    )
+    sendData(new FormData(field), () => reset(nameForm), () => openErrorAlert(nameForm));
   });
 };
 
