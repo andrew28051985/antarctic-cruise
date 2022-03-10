@@ -1,11 +1,11 @@
 .next-cruise {
-  padding: 125px 0 90px;
+  padding: 109px 0 90px;
 
   @include vp-1279 {
-    padding: 100px 0 70px;
+    padding: 95px 0 70px;
   }
   @include vp-767 {
-    padding: 65px 0 35px;
+    padding: 56px 0 35px;
   }
 
   & h2 {
@@ -15,7 +15,7 @@
     text-align: center;
 
     @include vp-767 {
-      margin-bottom: 40px;
+      margin-bottom: 32px;
     }
   }
 }
@@ -56,11 +56,18 @@
 
   @include vp-1279 {
     width: 309px;
+    padding-top: 334px;
+    padding-bottom: 25px;
+    padding-left: 35px;
 
     justify-self: center;
   }
   @include vp-767 {
     width: 270px;
+    margin-bottom: 31px;
+    padding-top: 340px;
+    padding-bottom: 18px;
+    padding-left: 25px;
   }
 
   & img {
@@ -129,9 +136,10 @@
 
   @include vp-1279 {
     padding: 35px;
+    padding-top: 30px;
   }
   @include vp-767 {
-    padding: 35px 25px;
+    padding: 28px 25px;
   }
 
   & h3 {
@@ -162,9 +170,9 @@
   }
 
   & a {
+    justify-content: center;
     margin: 0;
-    margin-top: auto;
-    padding-left: 47px;
+    margin-top: 14px;
 
     font-weight: 600;
     font-size: 14px;

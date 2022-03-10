@@ -30,12 +30,13 @@
 
   @include vp-1279 {
     flex-direction: column;
-    padding: 100px 0;
+    padding: 89px 0;
+    padding-bottom: 100px;
 
     text-align: center;
   }
   @include vp-767 {
-    padding: 65px 0;
+    padding: 58px 0 71px;
   }
 }
 
@@ -47,26 +48,28 @@
 
   @include vp-1279 {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 51px;
   }
   @include vp-767 {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
   }
 
   & h2 {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
     font-weight: 700;
     font-size: 40px;
     line-height: 60px;
 
     @include vp-1279 {
+      margin-bottom: 5px;
+
       font-size: 34px;
       line-height: 51px;
     }
     @include vp-767 {
-      margin-bottom: 25px;
+      margin-bottom: 14px;
 
       font-size: 24px;
       line-height: 31px;
@@ -76,6 +79,7 @@
   & p {
     width: 352px;
     margin: 0;
+    margin-bottom: 5px;
 
     @include vp-1279 {
       margin: 0 auto;
@@ -87,6 +91,14 @@
       line-height: 22px;
     }
   }
+
+  & p br {
+    display: block;
+
+    @include vp-767 {
+      display: none;
+    }
+  }
 }
 
 .booking__form {
@@ -94,6 +106,7 @@
 
   width: 403px;
   padding: 50px;
+  padding-top: 45px;
 
   background-color: $color-tangaroa;
   box-shadow: $color-tangaroa-box-shadow;
@@ -101,23 +114,29 @@
   @include vp-767 {
     width: 100%;
     min-width: 290px;
-    padding: 40px 30px;
+    padding: 35px 30px;
   }
 
   & h3 {
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
 
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
     color: $color-alice-blue;
 
+    @include vp-1279 {
+      margin-bottom: 27px;
+
+      text-align: left;
+    }
     @include vp-767 {
-      max-width: 374px;
-      margin: 0 auto 35px;
+      max-width: 280px;
+      margin: 0 auto 28px;
 
       line-height: 25px;
+      text-align: center;
     }
   }
 }
@@ -158,13 +177,13 @@
   }
 
   & input[type=checkbox] {
-    top: 340px;
+    top: 330px;
 
     @include vp-1279 {
-      top: 340px;
+      top: 330px;
     }
     @include vp-767 {
-      top: 360px;
+      top: 350px;
     }
   }
 
@@ -184,7 +203,7 @@
 
     @include vp-767 {
       width: 230px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       padding-left: 25px;
 
       text-align: left;

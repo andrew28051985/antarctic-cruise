@@ -2,14 +2,15 @@
   position: relative;
 
   padding: 109px 0;
+  padding-bottom: 115px;
 
   background-color: $color-solitude;
 
   @include vp-1279 {
-    padding: 100px 0;
+    padding: 90px 0 96px;
   }
   @include vp-767 {
-    padding: 65px 0;
+    padding: 55px 0 65px;
   }
 
   & img {
@@ -26,25 +27,25 @@
 
   & h2 {
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 
     text-align: center;
 
     @include vp-767 {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
   }
 
   & h3 {
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
 
     @include vp-1279 {
-      line-height: 25px;
+      line-height: 26px;
     }
 
     & br {
@@ -94,7 +95,7 @@
 
   @include vp-1279 {
     max-width: 206px;
-    padding: 25px 16px 25px 20px;
+    padding: 35px 16px 22px 20px;
   }
   @include vp-767 {
     flex-basis: 250px;
@@ -108,8 +109,7 @@
   }
 
   & svg {
-    margin-bottom: 10px;
-
+    //margin-bottom: 10px;
     @include vp-1279 {
       margin-bottom: 25px;
     }
@@ -145,5 +145,21 @@
       width: 38px;
       height: 13px;
     }
+  }
+}
+
+.advantages__icon-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 42px;
+  height: 32px;
+  margin-bottom: 20px;
+
+  @include vp-1279 {
+    margin-bottom: 5px;
+  }
+  @include vp-767 {
+    margin-bottom: 3px;
   }
 }
