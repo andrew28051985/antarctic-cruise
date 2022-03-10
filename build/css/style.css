@@ -1259,7 +1259,7 @@ button,
 }
 
 .booking__form form input[type=checkbox] {
-  top: 395px;
+  top: 340px;
 }
 
 .booking__form form input[type=checkbox] + label {
@@ -1764,7 +1764,7 @@ button,
   }
 
   .booking__form form input[type=checkbox] {
-    top: 640px;
+    top: 340px;
   }
 
   .contact {
@@ -2044,7 +2044,7 @@ button,
   }
 
   .booking__form form input[type=checkbox] {
-    top: 565px;
+    top: 360px;
   }
 
   .booking__form form input[type=checkbox] + label {

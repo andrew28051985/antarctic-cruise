@@ -158,13 +158,13 @@
   }
 
   & input[type=checkbox] {
-    top: 395px;
+    top: 340px;
 
     @include vp-1279 {
-      top: 640px;
+      top: 340px;
     }
     @include vp-767 {
-      top: 565px;
+      top: 360px;
     }
   }
 
