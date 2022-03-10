@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {getNavNoJs} from './utils/no-js-nav';
 import {initModals} from './modules/modals/init-modals';
 import {validityForm, sendUserFormData, bookingForm, inputPhone, inputEmail} from './modules/form/form';
+import {scrollToLink} from './utils/scroll-link';
 
 // ---------------------------------
 
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   getNavNoJs();
+  scrollToLink();
 
   // Modules
   // ---------------------------------

@@ -22,11 +22,13 @@
       <header class="page-header">
         <div class="container">
           <div class="page-header__wrapper">
-            <picture>
-              <source media="(max-width: 767px)" srcset="img/svg/logo-mini.svg ">
-              <source media="(max-width: 1279px)" srcset="img/svg/logo-medium.svg ">
-              <img src="img/svg/logo-maxi.svg" class="logo logo--header" alt="Логотип компании по Крузы в Антарктику в виде гор" width="70" height="38">
-            </picture>
+            <a>
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/svg/logo-mini.svg ">
+                <source media="(max-width: 1279px)" srcset="img/svg/logo-medium.svg ">
+                <img src="img/svg/logo-maxi.svg" class="logo logo--header" alt="Логотип компании по Крузы в Антарктику в виде гор" width="70" height="38">
+              </picture>
+            </a>
             <button class="page-header__toggle-nav page-header__toggle-nav--no-js page-header__toggle-nav--open-nav" type="button" data-open-modal="navigation">
               <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -34,7 +36,7 @@
               <nav class="main-nav">
                 <ul class="main-nav__list">
                   <li class="main-nav__item">
-                    <a href="#" class="main-nav__item-link">
+                    <a href="#advantages" class="main-nav__item-link">
                       <span>Преимущества</span>
                     </a>
                   </li>
@@ -44,12 +46,12 @@
                     </a>
                   </li>
                   <li class="main-nav__item">
-                    <a href="#" class="main-nav__item-link">
+                    <a href="#next-cruise" class="main-nav__item-link">
                       <span>Ближайшие круизы</span>
                     </a>
                   </li>
                   <li class="main-nav__item">
-                    <a href="#" class="main-nav__item-link">
+                    <a href="#contacts" class="main-nav__item-link">
                       <span>Контакты</span>
                     </a>
                   </li>
@@ -88,10 +90,13 @@
         </section>
 
         <section class="advantages">
-          <img src="img/content/bg-advantages.png" alt="бледный фон, горы крупным планом" width="100%" height="100%">
+          <img src="img/content/bg-advantages.png" alt="бледный фон, горы крупным планом" width="1366" height="562">
           <div class="container">
             <div class="advantages__wrapper">
-              <h2 class="title-section">Преимущества</h2>
+              <h2 class="title-section">
+                <a id="advantages">Преимущества</a>
+
+              </h2>
               <ul class="advantages__list">
                 <li class="advantages__item">
                   <div class="advantages__icon-wrapper">
@@ -128,7 +133,9 @@
 
         <section class="next-cruise">
           <div class="container">
-            <h2 class="title-section">Ближайшие круизы</h2>
+            <h2 class="title-section">
+              <a id="next-cruise">Ближайшие круизы</a>
+            </h2>
             <ul class="next-cruise__list">
               <li class="next-cruise__item">
                 <div class="next-cruise__wrapper-gradient"></div>
@@ -351,7 +358,7 @@
         </section>
 
         <section class="booking">
-          <img src="img/content/booking.jpg" alt="заснеженный берег северного моря с глыбой льда и горой" width="100%" height="100%">
+          <img src="img/content/booking.jpg" alt="заснеженный берег северного моря с глыбой льда и горой" width="1366" height="555">
           <div class="container">
             <div class="booking__wrapper">
               <div class="booking__text">
@@ -368,7 +375,7 @@
                   <label class="visually-hidden" for="name">Имя</label>
                   <input type="text" name="name" id="name" placeholder="Имя" minlength="1" maxlength="50" required>
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input type="phone" name="phone" id="phone" placeholder="Телефон" minlength="5" maxlength="11" required>
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" minlength="5" maxlength="11" required>
                   <label class="visually-hidden" for="email">Email</label>
                   <input type="email" name="email" id="email" placeholder="Email" required>
                   <input class="visually-hidden" type="checkbox" name="personal-data" id="personal-data" checked required>
@@ -382,7 +389,9 @@
 
         <section class="contact">
           <div class="container">
-            <h2 class="visually-hidden">Наши контакты</h2>
+            <h2 class="visually-hidden">
+              <a id="contacts">Наши контакты</a>
+            </h2>
             <div class="contact__wrapper">
               <div class="contact__map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1646857038960!5m2!1sru!2sru" width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -415,17 +424,19 @@
       <footer class="page-footer">
         <div class="container">
           <div class="page-footer__wrapper">
-            <picture>
-              <source media="(max-width: 767px)" srcset="img/svg/logo-mini.svg ">
-              <source media="(max-width: 1279px)" srcset="img/svg/logo-medium.svg ">
-              <img src="img/svg/logo-maxi.svg" class="logo" alt="Логотип компании по Крузы в Антарктику в виде гор" width="70" height="38">
-            </picture>
+            <a class="page-footer__logo-link">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/svg/logo-mini.svg ">
+                <source media="(max-width: 1279px)" srcset="img/svg/logo-medium.svg ">
+                <img src="img/svg/logo-maxi.svg" class="logo" alt="Логотип компании по Крузы в Антарктику в виде гор" width="70" height="38">
+              </picture>
+            </a>
 
             <div class="page-footer__wrapper-nav page-footer__wrapper-nav--no-js-nav">
               <nav class="main-nav">
                 <ul class="main-nav__list main-nav__list--footer">
                   <li class="main-nav__item main-nav__item--footer">
-                    <a href="#" class="main-nav__item-link main-nav__item-link--footer">
+                    <a href="#advantages" class="main-nav__item-link main-nav__item-link--footer">
                       <span>Преимущества</span>
                     </a>
                   </li>
@@ -435,12 +446,12 @@
                     </a>
                   </li>
                   <li class="main-nav__item main-nav__item--footer">
-                    <a href="#" class="main-nav__item-link main-nav__item-link--footer">
+                    <a href="#next-cruise" class="main-nav__item-link main-nav__item-link--footer">
                       <span>Ближайшие круизы</span>
                     </a>
                   </li>
                   <li class="main-nav__item main-nav__item--footer">
-                    <a href="#" class="main-nav__item-link main-nav__item-link--footer">
+                    <a href="#contacts" class="main-nav__item-link main-nav__item-link--footer">
                       <span>Контакты</span>
                     </a>
                   </li>
@@ -466,20 +477,6 @@
 
     </div>
 
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <div class="modal modal--preload modal--nav" data-modal="navigation">
       <div class="modal__wrapper modal__wrapper--nav">
         <div class="modal__overlay" data-close-modal></div>
@@ -496,7 +493,7 @@
             <nav class="main-nav">
               <ul class="main-nav__list">
                 <li class="main-nav__item">
-                  <a href="#" class="main-nav__item-link">
+                  <a href="#advantages" class="main-nav__item-link">
                     <span>Преимущества</span>
                   </a>
                 </li>
@@ -506,32 +503,18 @@
                   </a>
                 </li>
                 <li class="main-nav__item">
-                  <a href="#" class="main-nav__item-link">
+                  <a href="#next-cruise" class="main-nav__item-link">
                     <span>Ближайшие круизы</span>
                   </a>
                 </li>
                 <li class="main-nav__item">
-                  <a href="#" class="main-nav__item-link">
+                  <a href="#contacts" class="main-nav__item-link">
                     <span>Контакты</span>
                   </a>
                 </li>
               </ul>
             </nav>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </div>

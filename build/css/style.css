@@ -716,7 +716,7 @@ button,
   align-items: center;
 }
 
-.page-footer__wrapper picture {
+.page-footer__logo-link {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-right: 40px;
@@ -1609,7 +1609,7 @@ button,
     padding: 50px 0;
   }
 
-  .page-footer__wrapper picture {
+  .page-footer__logo-link {
     margin-right: 25px;
   }
 
@@ -1896,7 +1896,7 @@ button,
     align-items: flex-start;
   }
 
-  .page-footer__wrapper picture {
+  .page-footer__logo-link {
     margin-right: 0;
     margin-bottom: 20px;
   }
