@@ -568,9 +568,8 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
-  /* stylelint-disable-next-line */
+  /*stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
-  overflow: hidden;
 }
 
 .wrapper .header,
@@ -586,10 +585,10 @@ button,
 }
 
 .rouble {
+  font-weight: 400 !important;
   font-family: "Rouble", "Arial", sans-serif;
   /* stylelint-disable */
   text-transform: lowercase !important;
-  font-weight: 400 !important;
   /* stylelint-enable */
 }
 
@@ -741,11 +740,13 @@ button,
   margin-left: auto;
 }
 
-.page-footer__wrapper-social svg {
+.page-footer__wrapper-social > a {
+  display: inline-block;
   margin-right: 33px;
+  vertical-align: baseline;
 }
 
-.page-footer__wrapper-social svg:last-of-type {
+.page-footer__wrapper-social > a:last-of-type {
   margin-right: 0;
 }
 
@@ -1127,6 +1128,7 @@ button,
   width: 100%;
   height: 100%;
   padding: 30px 25px;
+  overflow: auto;
   color: #f9fbfd;
   background-color: #011c40;
 }
@@ -1366,6 +1368,7 @@ button,
 }
 
 .contact__map {
+  position: relative;
   -ms-flex-negative: 1;
   flex-shrink: 1;
   min-width: 560px;
@@ -1373,7 +1376,6 @@ button,
   background: url("../img/content/map.png") 0 0 no-repeat;
 }
 
-.contact__map img,
 .contact__map iframe {
   width: 100%;
   height: 100%;
@@ -1613,7 +1615,7 @@ button,
     margin-right: 25px;
   }
 
-  .page-footer__wrapper-social svg {
+  .page-footer__wrapper-social > a {
     margin-right: 23px;
   }
 

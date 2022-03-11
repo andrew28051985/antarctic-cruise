@@ -4,9 +4,9 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* stylelint-disable-next-line */
+  /*stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
-  overflow: hidden;
+  //overflow: hidden;
 
   .header,
   .footer {
@@ -19,10 +19,10 @@
 }
 
 .rouble {
+  font-weight: 400 !important;
   font-family: $ff-rouble;
   /* stylelint-disable */
   text-transform: lowercase !important;
-  font-weight: 400 !important;
   /* stylelint-enable */
 }
 

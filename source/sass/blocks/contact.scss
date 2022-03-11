@@ -20,6 +20,8 @@
 }
 
 .contact__map {
+  position: relative;
+
   flex-shrink: 1;
   min-width: 560px;
   height: 306px;
@@ -39,7 +41,6 @@
     margin-right: 0;
   }
 
-  & img,
   & iframe {
     width: 100%;
     height: 100%;

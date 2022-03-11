@@ -49,8 +49,11 @@
     margin-left: 0;
   }
 
-  & svg {
+  & > a {
+    display: inline-block;
     margin-right: 33px;
+
+    vertical-align: baseline;
 
     @include vp-1279 {
       margin-right: 23px;

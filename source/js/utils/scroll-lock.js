@@ -20,6 +20,13 @@ export class ScrollLock {
     );
   }
 
+  _getBodyScrollElement() {
+    setTimeout(() => {
+      window.scrollTo(0, 200);
+    }, 400);
+  }
+
+
   disableScrolling() {
     this._scrollTop = document.body.dataset.scroll = document.body.dataset.scroll ? document.body.dataset.scroll : this._getBodyScrollTop();
     if (this._getScrollbarWidth()) {
