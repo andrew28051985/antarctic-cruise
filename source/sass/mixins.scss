@@ -24,6 +24,12 @@
   }
 }
 
+@mixin vp-1279-2dppx {
+  @media (max-width: $vp-1280 - 1) and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
 @mixin vp-1023 {
   @media (max-width: $vp-1024 - 1) {
     @content;
@@ -38,6 +44,12 @@
 
 @mixin vp-374 {
   @media (max-width: $vp-375 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-374-2dppx {
+  @media (max-width: $vp-375 - 1) and (min-resolution: 2dppx) {
     @content;
   }
 }
@@ -67,6 +79,12 @@
 //     @content;
 //   }
 // }
+
+@mixin vp-1280-2dppx {
+  @media (min-width: $vp-1280) and (min-resolution: 2dppx) {
+    @content;
+  }
+}
 
 // @mixin vp-1440 {
 //   @media (min-width: $vp-1440) {

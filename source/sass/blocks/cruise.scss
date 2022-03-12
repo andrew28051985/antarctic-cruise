@@ -16,6 +16,24 @@
     background-position: 50% 45px;
     background-size: cover;
   }
+  @include vp-1279-2dppx {
+    background: $color-neon-blue url("../img/content/bg-main-mini@2x.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 1536px auto;
+    background-size: cover;
+  }
+  @include vp-374-2dppx {
+    background: $color-neon-blue url("../img/content/bg-main-mini@2x.jpg") no-repeat;
+    background-position: 50% 45px;
+    background-size: 1536px auto;
+    background-size: cover;
+  }
+  @include vp-1280-2dppx {
+    background: $color-neon-blue url("../img/content/bg-main-maxi@2x.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 2732px auto;
+    background-size: cover;
+  }
 
   &--no-js {
     @include vp-767 {

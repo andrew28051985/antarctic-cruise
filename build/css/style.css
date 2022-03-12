@@ -1592,6 +1592,15 @@ button,
   }
 }
 
+@media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1280px) and (min-resolution: 2dppx) {
+  .cruise {
+    background: #2c39f2 url("../img/content/bg-main-maxi@2x.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 2732px auto;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 1279px) {
   .container {
     padding: 0 45px;
@@ -1830,6 +1839,15 @@ button,
 
   .contact__icon-text--marker svg {
     margin-top: 5px;
+  }
+}
+
+@media (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1279px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1279px) and (min-resolution: 2dppx) {
+  .cruise {
+    background: #2c39f2 url("../img/content/bg-main-mini@2x.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: 1536px auto;
+    background-size: cover;
   }
 }
 
@@ -2201,6 +2219,15 @@ button,
   .cruise {
     background: #2c39f2 url("../img/content/bg-main-mini.jpg") no-repeat;
     background-position: 50% 45px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 374px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 374px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 374px) and (min-resolution: 2dppx) {
+  .cruise {
+    background: #2c39f2 url("../img/content/bg-main-mini@2x.jpg") no-repeat;
+    background-position: 50% 45px;
+    background-size: 1536px auto;
     background-size: cover;
   }
 }
