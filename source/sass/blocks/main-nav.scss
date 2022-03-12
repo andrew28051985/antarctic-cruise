@@ -71,3 +71,9 @@
     }
   }
 }
+
+.main-nav__item-link:hover,
+.main-nav__item-link:focus,
+.main-nav__item-link:active {
+  opacity: 0.8;
+}

@@ -740,14 +740,19 @@ button,
   margin-left: auto;
 }
 
-.page-footer__wrapper-social > a {
+.page-footer__wrapper-social a {
   display: inline-block;
   margin-right: 33px;
   vertical-align: baseline;
 }
 
-.page-footer__wrapper-social > a:last-of-type {
+.page-footer__wrapper-social a:last-of-type {
   margin-right: 0;
+}
+
+.page-footer__wrapper-social a:hover,
+.page-footer__wrapper-social a:focus {
+  opacity: 0.8;
 }
 
 .btn {
@@ -820,6 +825,12 @@ button,
   font-weight: 500;
   line-height: 20px;
   color: #f9fbfd;
+}
+
+.main-nav__item-link:hover,
+.main-nav__item-link:focus,
+.main-nav__item-link:active {
+  opacity: 0.8;
 }
 
 .icon {
@@ -1624,7 +1635,7 @@ button,
     margin-right: 25px;
   }
 
-  .page-footer__wrapper-social > a {
+  .page-footer__wrapper-social a {
     margin-right: 23px;
   }
 

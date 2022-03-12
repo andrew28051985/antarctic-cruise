@@ -48,18 +48,22 @@
   @include vp-767 {
     margin-left: 0;
   }
+}
+.page-footer__wrapper-social a {
+  display: inline-block;
+  margin-right: 33px;
 
-  & > a {
-    display: inline-block;
-    margin-right: 33px;
+  vertical-align: baseline;
 
-    vertical-align: baseline;
+  @include vp-1279 {
+    margin-right: 23px;
+  }
+  &:last-of-type {
+    margin-right: 0;
+  }
 
-    @include vp-1279 {
-      margin-right: 23px;
-    }
-    &:last-of-type {
-      margin-right: 0;
-    }
+  &:hover,
+  &:focus {
+    opacity: 0.8;
   }
 }
