@@ -585,7 +585,9 @@ button,
 }
 
 .rouble {
+  /* stylelint-disable */
   font-weight: 400 !important;
+  /* stylelint-enable */
   font-family: "Rouble", "Arial", sans-serif;
   /* stylelint-disable */
   text-transform: lowercase !important;
@@ -837,17 +839,17 @@ button,
   fill: #f9fbfd;
 }
 
-.icon__facebook {
+.icon--facebook {
   width: 11px;
   height: 20px;
 }
 
-.icon__instagram {
+.icon--instagram {
   width: 20px;
   height: 20px;
 }
 
-.icon__twitter {
+.icon--twitter {
   width: 20px;
   height: 16px;
 }
@@ -1053,7 +1055,6 @@ button,
 .next-cruise__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1281,7 +1282,7 @@ button,
 }
 
 .booking__form form .invalid {
-  border-right: 15px solid red;
+  border-right: 15px solid #ff0000;
 }
 
 .booking__form form input::-webkit-input-placeholder {
@@ -1289,56 +1290,6 @@ button,
   line-height: 21px;
   color: rgba(1, 28, 64, 0.7);
   background-color: #f9fbfd;
-}
-
-.booking__form form input[type=checkbox] {
-  top: 330px;
-}
-
-.booking__form form input[type=checkbox] + label {
-  position: relative;
-  margin-bottom: 35px;
-  padding-left: 23px;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 13px;
-  text-align: right;
-  color: #f9fbfd;
-  cursor: pointer;
-}
-
-.booking__form form input[type=checkbox] + label:hover::before,
-.booking__form form input[type=checkbox] + label:focus::before {
-  border: none;
-  outline: 1px solid #f9fbfd;
-  opacity: 0.8;
-}
-
-.booking__form form input[type=checkbox] + label::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: 0;
-  width: 18px;
-  height: 18px;
-  background-color: #f9fbfd;
-}
-
-.booking__form form input[type=checkbox]:focus + label::before,
-.booking__form form input[type=checkbox]:hover + label::before {
-  border: none;
-  outline: 1px solid #f9fbfd;
-  opacity: 0.8;
-}
-
-.booking__form form input[type=checkbox]:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 3px;
-  width: 12px;
-  height: 8px;
-  background: url("../img/sprite/icon-checked.svg") no-repeat;
 }
 
 .booking__form form button {
@@ -1360,6 +1311,56 @@ button,
 .booking__form form button:focus {
   border: none;
   outline: none;
+}
+
+.booking__form input[type="checkbox"] {
+  top: 330px;
+}
+
+.booking__form input[type="checkbox"] + label {
+  position: relative;
+  margin-bottom: 35px;
+  padding-left: 23px;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: right;
+  color: #f9fbfd;
+  cursor: pointer;
+}
+
+.booking__form input[type="checkbox"] + label:hover::before,
+.booking__form input[type="checkbox"] + label:focus::before {
+  border: none;
+  outline: 1px solid #f9fbfd;
+  opacity: 0.8;
+}
+
+.booking__form input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
+}
+
+.booking__form input[type="checkbox"]:focus + label::before,
+.booking__form input[type="checkbox"]:hover + label::before {
+  border: none;
+  outline: 1px solid #f9fbfd;
+  opacity: 0.8;
+}
+
+.booking__form input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 12px;
+  height: 8px;
+  background: url("../img/sprite/icon-checked.svg") no-repeat;
 }
 
 .contact {
@@ -1580,7 +1581,7 @@ button,
   bottom: 75px;
   padding: 0;
   font-weight: 600;
-  color: red;
+  color: #ff0000;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1608,7 +1609,6 @@ button,
     background: #2c39f2 url("../img/content/bg-main-maxi@2x.jpg") no-repeat;
     background-position: 50% 50%;
     background-size: 2732px auto;
-    background-size: cover;
   }
 }
 
@@ -1658,17 +1658,17 @@ button,
     line-height: 15px;
   }
 
-  .icon__facebook {
+  .icon--facebook {
     width: 9px;
     height: 16px;
   }
 
-  .icon__instagram {
+  .icon--instagram {
     width: 16px;
     height: 16px;
   }
 
-  .icon__twitter {
+  .icon--twitter {
     width: 16px;
     height: 13px;
   }
@@ -1822,7 +1822,7 @@ button,
     text-align: left;
   }
 
-  .booking__form form input[type=checkbox] {
+  .booking__form input[type="checkbox"] {
     top: 330px;
   }
 
@@ -1858,7 +1858,6 @@ button,
     background: #2c39f2 url("../img/content/bg-main-mini@2x.jpg") no-repeat;
     background-position: 50% 50%;
     background-size: 1536px auto;
-    background-size: cover;
   }
 }
 
@@ -2125,24 +2124,24 @@ button,
     text-align: center;
   }
 
-  .booking__form form input[type=checkbox] {
+  .booking__form input[type="checkbox"] {
     top: 350px;
   }
 
-  .booking__form form input[type=checkbox] + label {
+  .booking__form input[type="checkbox"] + label {
     width: 230px;
     margin-bottom: 25px;
     padding-left: 25px;
     text-align: left;
   }
 
-  .booking__form form input[type=checkbox] + label::before {
+  .booking__form input[type="checkbox"] + label::before {
     top: 3px;
     width: 20px;
     height: 20px;
   }
 
-  .booking__form form input[type=checkbox]:checked + label::after {
+  .booking__form input[type="checkbox"]:checked + label::after {
     top: 9px;
     left: 4px;
   }
@@ -2213,7 +2212,6 @@ button,
     width: 100%;
     height: 100vh;
     margin-left: auto;
-    padding: 0;
     padding: 11px 15px;
   }
 
@@ -2239,6 +2237,5 @@ button,
     background: #2c39f2 url("../img/content/bg-main-mini@2x.jpg") no-repeat;
     background-position: 50% 45px;
     background-size: 1536px auto;
-    background-size: cover;
   }
 }

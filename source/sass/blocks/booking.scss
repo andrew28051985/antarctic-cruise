@@ -176,90 +176,6 @@
     background-color: $color-alice-blue;
   }
 
-  & input[type=checkbox] {
-    top: 330px;
-
-    @include vp-1279 {
-      top: 330px;
-    }
-    @include vp-767 {
-      top: 350px;
-    }
-  }
-
-  & input[type=checkbox] + label {
-    position: relative;
-
-    margin-bottom: 35px;
-    padding-left: 23px;
-
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 13px;
-    text-align: right;
-    color: $color-alice-blue;
-
-    cursor: pointer;
-
-    @include vp-767 {
-      width: 230px;
-      margin-bottom: 25px;
-      padding-left: 25px;
-
-      text-align: left;
-    }
-
-    &:hover::before,
-    &:focus::before {
-      border: none;
-      outline: 1px solid $color-alice-blue;
-      opacity: 0.8;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -3px;
-      left: 0;
-
-      width: 18px;
-      height: 18px;
-
-      background-color: $color-alice-blue;
-
-      @include vp-767 {
-        top: 3px;
-
-        width: 20px;
-        height: 20px;
-      }
-    }
-  }
-
-  & input[type=checkbox]:focus + label::before,
-  & input[type=checkbox]:hover + label::before {
-    border: none;
-    outline: 1px solid $color-alice-blue;
-    opacity: 0.8;
-  }
-
-  & input[type=checkbox]:checked + label::after {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 3px;
-
-    width: 12px;
-    height: 8px;
-
-    background: url("../img/sprite/icon-checked.svg") no-repeat;
-
-    @include vp-767 {
-      top: 9px;
-      left: 4px;
-    }
-  }
-
   & button {
     justify-content: center;
     align-items: center;
@@ -277,5 +193,89 @@
       border: none;
       outline: none;
     }
+  }
+}
+
+.booking__form input[type="checkbox"] {
+  top: 330px;
+
+  @include vp-1279 {
+    top: 330px;
+  }
+  @include vp-767 {
+    top: 350px;
+  }
+}
+
+.booking__form input[type="checkbox"] + label {
+  position: relative;
+
+  margin-bottom: 35px;
+  padding-left: 23px;
+
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: right;
+  color: $color-alice-blue;
+
+  cursor: pointer;
+
+  @include vp-767 {
+    width: 230px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+
+    text-align: left;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: none;
+    outline: 1px solid $color-alice-blue;
+    opacity: 0.8;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: $color-alice-blue;
+
+    @include vp-767 {
+      top: 3px;
+
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.booking__form input[type="checkbox"]:focus + label::before,
+.booking__form input[type="checkbox"]:hover + label::before {
+  border: none;
+  outline: 1px solid $color-alice-blue;
+  opacity: 0.8;
+}
+
+.booking__form input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 3px;
+
+  width: 12px;
+  height: 8px;
+
+  background: url("../img/sprite/icon-checked.svg") no-repeat;
+
+  @include vp-767 {
+    top: 9px;
+    left: 4px;
   }
 }

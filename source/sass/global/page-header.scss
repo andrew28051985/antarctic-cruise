@@ -26,12 +26,14 @@
     &--closed-nav {
       display: none;
     }
+
     &--no-js-nav,
     &--opened-nav {
       display: block;
 
       background-color: $color-transparent;
     }
+
     &--no-js-nav {
       flex-basis: 100%;
       margin-top: 20px;
@@ -40,6 +42,7 @@
         color: $color-alice-blue;
       }
     }
+
     &--opened-nav {
       position: absolute;
       top: 0;

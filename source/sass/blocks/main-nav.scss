@@ -28,6 +28,7 @@
     margin-right: 0;
     margin-bottom: 26px;
   }
+
   &:last-of-type {
     margin-right: 0;
   }
@@ -36,6 +37,7 @@
     @include vp-767 {
       margin-bottom: 9px;
     }
+
     &:last-child {
       @include vp-767 {
         margin-bottom: 21px;
