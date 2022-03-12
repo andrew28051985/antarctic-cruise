@@ -1608,7 +1608,7 @@ button,
   .cruise {
     background: #2c39f2 url("../img/content/bg-main-maxi@2x.jpg") no-repeat;
     background-position: 50% 50%;
-    background-size: 2732px auto;
+    background-size: cover;
   }
 }
 
@@ -1857,7 +1857,7 @@ button,
   .cruise {
     background: #2c39f2 url("../img/content/bg-main-mini@2x.jpg") no-repeat;
     background-position: 50% 50%;
-    background-size: 1536px auto;
+    background-size: cover;
   }
 }
 
@@ -2236,6 +2236,6 @@ button,
   .cruise {
     background: #2c39f2 url("../img/content/bg-main-mini@2x.jpg") no-repeat;
     background-position: 50% 45px;
-    background-size: 1536px auto;
+    background-size: cover;
   }
 }
