@@ -3,7 +3,7 @@
 
   background-color: $color-tangaroa;
 
-  @include vp-1279 {
+  @include vp-1023 {
     padding: 50px 0;
   }
   @include vp-767 {
@@ -24,9 +24,10 @@
 
 .page-footer__logo-link {
   flex-shrink: 0;
+  align-self: start;
   margin-right: 40px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     margin-right: 25px;
   }
   @include vp-767 {
@@ -35,33 +36,42 @@
   }
 }
 
-.page-footer__nav {
+.page-footer__wrapper-nav {
   justify-content: flex-start;
+
+  @include vp-767 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .page-footer__wrapper-social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  min-width: 117px;
+  margin: -16.5px;
   margin-left: auto;
 
+  @include vp-1023 {
+    min-width: 87px;
+    margin: -11.5px;
+    margin-left: auto;
+  }
   @include vp-767 {
-    margin-left: 0;
+    margin: -11.5px;
   }
 }
 
 .page-footer__wrapper-social a {
   display: inline-block;
-  margin-right: 33px;
+  margin: 16.5px;
 
   vertical-align: baseline;
 
-  @include vp-1279 {
-    margin-right: 23px;
-  }
-
-  &:last-of-type {
-    margin-right: 0;
+  @include vp-1023 {
+    margin: 11.5px;
   }
 
   &:hover,

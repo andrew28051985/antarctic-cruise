@@ -1,4 +1,4 @@
-const validityEmail = /^[A-Za-z0-9]{1,19}@[A-Za-z0-9]{1,19}.[rsucomwinf]{2,8}$/;
+const validityEmail = /^[A-Za-z0-9]{1,19}@[A-Za-z0-9]{1,19}.{1,20}$/;
 const validityInputNumber = /^[0-9]{1,20}$/;
 const bookingForm = document.querySelector('.booking__form');
 const inputPhone = bookingForm.querySelector('#phone');

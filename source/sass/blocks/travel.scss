@@ -1,7 +1,7 @@
 .travel {
   padding: 120px 0;
 
-  @include vp-1279 {
+  @include vp-1023 {
     padding: 95px 0;
   }
   @include vp-767 {
@@ -12,17 +12,18 @@
 .travel__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   @include vp-767 {
     flex-direction: column;
+    align-items: center;
   }
 }
 
 .travel__text {
   margin-right: 88px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     margin-right: 30px;
   }
   @include vp-767 {
@@ -34,7 +35,7 @@
     margin: 0;
     margin-bottom: 25px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       margin-bottom: 12px;
     }
   }
@@ -43,7 +44,7 @@
     margin: 0;
 
     font-weight: 400;
-    line-height: 150%;//24px;
+    line-height: 150%;
   }
 }
 
@@ -52,7 +53,7 @@
   width: 560px;
   height: 301px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     position: relative;
 
     width: 324px;
@@ -68,7 +69,7 @@
   & img {
     width: 100%;
 
-    @include vp-1279 {
+    @include vp-1023 {
       position: absolute;
       top: 0;
       right: 0;

@@ -6,7 +6,7 @@
   background-position: 50% 50%;
   background-size: cover;
 
-  @include vp-1279 {
+  @include vp-1023 {
     background: $color-neon-blue url("../img/content/bg-main-mini.jpg") no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -16,7 +16,7 @@
     background-position: 50% 45px;
     background-size: cover;
   }
-  @include vp-1279-2dppx {
+  @include vp-1024-2dppx {
     background: $color-neon-blue url("../img/content/bg-main-mini@2x.jpg") no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -26,7 +26,7 @@
     background-position: 50% 45px;
     background-size: cover;
   }
-  @include vp-1280-2dppx {
+  @include vp-1024-2dppx {
     background: $color-neon-blue url("../img/content/bg-main-maxi@2x.jpg") no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -49,7 +49,7 @@
 
   color: $color-alice-blue;
 
-  @include vp-1279 {
+  @include vp-1023 {
     height: 662px;
     padding-left: 0;
   }
@@ -65,7 +65,7 @@
     font-size: 54px;
     line-height: 53px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       margin-bottom: 14px;
 
       font-size: 50px;
@@ -88,7 +88,7 @@
     font-size: 20px;
     line-height: 24px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       font-size: 18px;
       line-height: 22px;
     }

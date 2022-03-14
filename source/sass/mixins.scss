@@ -80,8 +80,8 @@
 //   }
 // }
 
-@mixin vp-1280-2dppx {
-  @media (min-width: $vp-1280) and (min-resolution: 2dppx) {
+@mixin vp-1024-2dppx {
+  @media (min-width: $vp-1024) and (min-resolution: 2dppx) {
     @content;
   }
 }
