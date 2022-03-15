@@ -1,6 +1,10 @@
 .cruise {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
   width: 100%;
-  margin-top: -108px;
+  //margin-top: -108px;
 
   background: $color-neon-blue url("../img/content/bg-main-maxi.jpg") no-repeat;
   background-position: 50% 50%;
@@ -13,7 +17,7 @@
   }
   @include vp-374 {
     background: $color-neon-blue url("../img/content/bg-main-mini.jpg") no-repeat;
-    background-position: 50% 45px;
+    background-position: 50% 50%;
     background-size: cover;
   }
   @include vp-1024-2dppx {
@@ -23,7 +27,7 @@
   }
   @include vp-374-2dppx {
     background: $color-neon-blue url("../img/content/bg-main-mini@2x.jpg") no-repeat;
-    background-position: 50% 45px;
+    background-position: 50% 50%;
     background-size: cover;
   }
   @include vp-1024-2dppx {
@@ -34,7 +38,7 @@
 
   &--no-js {
     @include vp-767 {
-      margin-top: -325px;
+      //margin-top: -325px;
     }
   }
 }
@@ -50,11 +54,11 @@
   color: $color-alice-blue;
 
   @include vp-1023 {
-    height: 662px;
+    height: 638px;
     padding-left: 0;
   }
   @include vp-767 {
-    height: 546px;
+    height: 500px;
   }
 
   & h1 {
@@ -66,13 +70,12 @@
     line-height: 53px;
 
     @include vp-1023 {
-      margin-bottom: 14px;
+      margin-bottom: 35px;
 
       font-size: 50px;
-      line-height: 89px;
+      line-height: 48px;
     }
     @include vp-767 {
-      margin-top: 42px;
       margin-bottom: 25px;
 
       font-size: 36px;
