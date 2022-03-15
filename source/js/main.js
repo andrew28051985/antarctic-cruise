@@ -3,6 +3,7 @@ import {getNavNoJs} from './utils/no-js-nav';
 import {initModals} from './modules/modals/init-modals';
 import {validityForm, sendUserFormData, bookingForm, inputPhone, inputEmail} from './modules/form/form';
 import {scrollToLink, breakpointChecker} from './utils/scroll-link';
+import {breakpointCheckerOnClickButtonCruise, breakpointCheckerOffClickButtonCruise} from './modules/card-cruise/card-cruise';
 
 // ---------------------------------
 
@@ -25,6 +26,8 @@ window.addEventListener('DOMContentLoaded', () => {
     validityForm(inputPhone, inputEmail);
     sendUserFormData(bookingForm);
     breakpointChecker();
+    breakpointCheckerOnClickButtonCruise();
+    breakpointCheckerOffClickButtonCruise();
   });
 });
 
