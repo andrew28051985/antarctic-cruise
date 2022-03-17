@@ -738,23 +738,28 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-width: 117px;
+  width: 159px;
   margin: -16.5px;
   margin-left: auto;
 }
 
 .page-footer__wrapper-social a {
   display: inline-block;
+  -ms-flex-preferred-size: 20px;
+  flex-basis: 20px;
   margin: 16.5px;
   vertical-align: baseline;
+  text-align: center;
 }
 
 .page-footer__wrapper-social a:hover,
@@ -1022,8 +1027,8 @@ button,
 }
 
 .advantages__item {
-  -ms-flex-preferred-size: 360px;
-  flex-basis: 360px;
+  width: 30%;
+  max-width: 360px;
   margin: 20px;
   padding: 30px;
   background-color: #f9fbfd;
@@ -1120,7 +1125,14 @@ button,
   color: #f9fbfd;
 }
 
-.next-cruise__item:hover .next-cruise__wrapper {
+.next-cruise__item:hover .next-cruise__wrapper,
+.next-cruise__item:focus-within .next-cruise__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.next-cruise__item a:focus .next-cruise__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1642,6 +1654,12 @@ button,
   }
 }
 
+@media (max-width: 1279px) {
+  .advantages__item {
+    width: 29%;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 45px;
@@ -1667,12 +1685,14 @@ button,
   }
 
   .page-footer__wrapper-social {
-    min-width: 87px;
+    width: 117px;
     margin: -11.5px;
     margin-left: auto;
   }
 
   .page-footer__wrapper-social a {
+    -ms-flex-preferred-size: 16px;
+    flex-basis: 16px;
     margin: 11.5px;
   }
 
@@ -1778,7 +1798,7 @@ button,
   }
 
   .advantages__item {
-    max-width: 206px;
+    width: 29%;
     margin: 15px;
     padding: 35px 16px 22px 20px;
   }
@@ -1973,7 +1993,11 @@ button,
   }
 
   .page-footer__wrapper-social {
-    margin: -11.5px;
+    margin: -9.5px;
+  }
+
+  .page-footer__wrapper-social a {
+    margin: 9.5px;
   }
 
   .title-section {
@@ -1995,11 +2019,12 @@ button,
   }
 
   .main-nav__item--footer {
-    margin-bottom: 9px;
+    margin-bottom: -3px;
   }
 
   .main-nav__item--footer:last-child {
-    margin-bottom: 21px;
+    margin-top: 9px;
+    margin-bottom: 14px;
   }
 
   .main-nav__item-link {
@@ -2031,6 +2056,7 @@ button,
 
   .cruise__wrapper--no-js {
     height: 850px;
+    margin-bottom: -75px;
   }
 
   .travel {

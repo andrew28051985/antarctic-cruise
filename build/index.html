@@ -151,7 +151,7 @@
               <a id="next-cruise">Ближайшие круизы</a>
             </h2>
             <ul class="next-cruise__list">
-              <li class="next-cruise__item">
+              <li class="next-cruise__item" tabindex="0">
                 <div class="next-cruise__wrapper-gradient"></div>
                 <picture>
                   <source type="image/webp" srcset="img/content/cruise-1.webp, img/content/cruise-1@2x.webp 2x">
@@ -179,10 +179,10 @@
                       <p>от 11500 $</p>
                     </dd>
                   </dl>
-                  <a class="btn btn--ligth" href="#">Забронировать</a>
+                  <a class="btn btn--ligth btn--1" href="#" tabindex="0">Забронировать</a>
                 </div>
               </li>
-              <li class="next-cruise__item">
+              <li class="next-cruise__item" tabindex="0">
                 <div class="next-cruise__wrapper-gradient"></div>
                 <picture>
                   <source type="image/webp" srcset="img/content/cruise-1.webp, img/content/cruise-1@2x.webp 2x">
@@ -210,10 +210,10 @@
                       <p>от 14500 $</p>
                     </dd>
                   </dl>
-                  <a class="btn btn--ligth" href="#">Забронировать</a>
+                  <a class="btn btn--ligth btn--2" href="#" tabindex="0">Забронировать</a>
                 </div>
               </li>
-              <li class="next-cruise__item">
+              <li class="next-cruise__item" tabindex="0">
                 <div class="next-cruise__wrapper-gradient"></div>
                 <picture>
                   <source type="image/webp" srcset="img/content/cruise-2.webp, img/content/cruise-2@2x.webp 2x">
@@ -241,10 +241,10 @@
                       <p>от 14500 $</p>
                     </dd>
                   </dl>
-                  <a class="btn btn--ligth" href="#">Забронировать</a>
+                  <a class="btn btn--ligth btn--3" href="#" tabindex="0">Забронировать</a>
                 </div>
               </li>
-              <li class="next-cruise__item">
+              <li class="next-cruise__item" tabindex="0">
                 <div class="next-cruise__wrapper-gradient"></div>
                 <picture>
                   <source type="image/webp" srcset="img/content/cruise-3.webp, img/content/cruise-3@2x.webp 2x">
@@ -272,10 +272,10 @@
                       <p>от 9700 $</p>
                     </dd>
                   </dl>
-                  <a class="btn btn--ligth" href="#">Забронировать</a>
+                  <a class="btn btn--ligth btn--4" href="#" tabindex="0">Забронировать</a>
                 </div>
               </li>
-              <li class="next-cruise__item">
+              <li class="next-cruise__item" tabindex="0">
                 <div class="next-cruise__wrapper-gradient"></div>
                 <picture>
                   <source type="image/webp" srcset="img/content/cruise-4.webp, img/content/cruise-4@2x.webp 2x">
@@ -303,10 +303,10 @@
                       <p>от 18600 $</p>
                     </dd>
                   </dl>
-                  <a class="btn btn--ligth" href="#">Забронировать</a>
+                  <a class="btn btn--ligth btn--5" href="#" tabindex="0">Забронировать</a>
                 </div>
               </li>
-              <li class="next-cruise__item">
+              <li class="next-cruise__item" tabindex="0">
                 <div class="next-cruise__wrapper-gradient"></div>
                 <picture>
                   <source type="image/webp" srcset="img/content/cruise-5.webp, img/content/cruise-5@2x.webp 2x">
@@ -334,10 +334,10 @@
                       <p>от 11700 $</p>
                     </dd>
                   </dl>
-                  <a class="btn btn--ligth" href="#">Забронировать</a>
+                  <a class="btn btn--ligth btn--6" href="#" tabindex="0">Забронировать</a>
                 </div>
               </li>
-              <li class="next-cruise__item">
+              <li class="next-cruise__item" tabindex="0">
                 <div class="next-cruise__wrapper-gradient"></div>
                 <picture>
                   <source type="image/webp" srcset="img/content/cruise-6.webp, img/content/cruise-6@2x.webp 2x">
@@ -365,10 +365,10 @@
                       <p>от 12500 $</p>
                     </dd>
                   </dl>
-                  <a class="btn btn--ligth" href="#">Забронировать</a>
+                  <a class="btn btn--ligth btn--7" href="#" tabindex="0">Забронировать</a>
                 </div>
               </li>
-              <li class="next-cruise__item">
+              <li class="next-cruise__item" tabindex="0">
                 <div class="next-cruise__wrapper-gradient"></div>
                 <picture>
                   <source type="image/webp" srcset="img/content/cruise-7.webp, img/content/cruise-7@2x.webp 2x">
@@ -395,7 +395,7 @@
                       <p>от 12300 $</p>
                     </dd>
                   </dl>
-                  <a class="btn btn--ligth" href="#">Забронировать</a>
+                  <a class="btn btn--ligth btn--8" href="#" tabindex="0">Забронировать</a>
                 </div>
               </li>
             </ul>
@@ -511,17 +511,20 @@
 
             <div class="page-footer__wrapper-social">
               <a href="#">
-                <svg class="icon icon--facebook" width="11" height="20">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg class="icon icon--facebook" aria-hidden="true" focusable="false" width="11" height="20">
                   <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
                 </svg>
               </a>
               <a href="#">
-                <svg class="icon icon--instagram" width="20" height="20">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg class="icon icon--instagram" aria-hidden="true" focusable="false" width="20" height="20">
                   <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
                 </svg>
               </a>
               <a href="#">
-                <svg class="icon icon--twitter" width="20" height="16">
+                <span class="visually-hidden">Твиттер</span>
+                <svg class="icon icon--twitter" aria-hidden="true" focusable="false" width="20" height="16">
                   <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -546,30 +549,6 @@
             </button>
           </div>
           <div class="modal__content-wrapper-nav">
-            <nav class="main-nav">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a href="#advantages" class="main-nav__item-link">
-                    <span>Преимущества</span>
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="#" class="main-nav__item-link">
-                    <span>Направления</span>
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="#next-cruise" class="main-nav__item-link">
-                    <span>Ближайшие круизы</span>
-                  </a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="#contacts" class="main-nav__item-link">
-                    <span>Контакты</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
           </div>
         </div>
       </div>

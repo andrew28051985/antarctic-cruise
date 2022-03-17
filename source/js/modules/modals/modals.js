@@ -8,6 +8,9 @@ export class Modals {
 
     this._modalOpenElements = document.querySelectorAll('[data-open-modal]');
     this._logoNav = document.querySelector('.logo--header');
+    this._pageHeader = document.querySelector('.page-header__wrapper-nav');
+    this._mainNav = this._pageHeader.querySelector('.main-nav');
+    this._modalNav = document.querySelector('.modal__content-wrapper-nav');
     this._openedModalElement = null;
     this._modalName = null;
     this._enableScrolling = true;
@@ -143,6 +146,7 @@ export class Modals {
 
     if (modal && modal.classList.contains('modal--nav')) {
       this._logoNav.classList.add('logo--no-active');
+      this._modalNav.append(this._mainNav);
     }
 
     document.removeEventListener('click', this._documentClickHandler);
@@ -185,7 +189,11 @@ export class Modals {
     }
 
     if (modal && modal.classList.contains('modal--nav')) {
+      const modalNav = document.querySelector('.modal__content-wrapper-nav');
+      const nav = modalNav.querySelector('.main-nav');
+
       this._logoNav.classList.remove('logo--no-active');
+      this._pageHeader.append(nav);
     }
 
     if (this._lockFocus) {

@@ -104,6 +104,7 @@
   &--no-js {
     @include vp-767 {
       height: 850px;
+      margin-bottom: -75px;
     }
   }
 }

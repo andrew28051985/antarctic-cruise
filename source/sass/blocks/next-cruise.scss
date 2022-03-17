@@ -99,7 +99,12 @@
     color: $color-alice-blue;
   }
 
-  &:hover .next-cruise__wrapper {
+  &:hover .next-cruise__wrapper,
+  &:focus-within .next-cruise__wrapper {
+    display: flex;
+  }
+
+  & a:focus .next-cruise__wrapper {
     display: flex;
   }
 }

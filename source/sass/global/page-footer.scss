@@ -47,31 +47,38 @@
 
 .page-footer__wrapper-social {
   display: flex;
+  flex-shrink: 0;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  min-width: 117px;
+  width: 159px;
   margin: -16.5px;
   margin-left: auto;
 
   @include vp-1023 {
-    min-width: 87px;
+    width: 117px;
     margin: -11.5px;
     margin-left: auto;
   }
   @include vp-767 {
-    margin: -11.5px;
+    margin: -9.5px;
   }
 }
 
 .page-footer__wrapper-social a {
   display: inline-block;
+  flex-basis: 20px;
   margin: 16.5px;
 
   vertical-align: baseline;
+  text-align: center;
 
   @include vp-1023 {
+    flex-basis: 16px;
     margin: 11.5px;
+  }
+  @include vp-767 {
+    margin: 9.5px;
   }
 
   &:hover,

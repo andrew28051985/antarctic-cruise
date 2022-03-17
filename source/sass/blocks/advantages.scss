@@ -100,14 +100,18 @@
 }
 
 .advantages__item {
-  flex-basis: 360px;
+  width: 30%;
+  max-width: 360px;
   margin: 20px;
   padding: 30px;
 
   background-color: $color-alice-blue;
 
+  @include vp-1279 {
+    width: 29%;
+  }
   @include vp-1023 {
-    max-width: 206px;
+    width: 29%;
     margin: 15px;
     padding: 35px 16px 22px 20px;
   }

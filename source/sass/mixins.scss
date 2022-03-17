@@ -74,11 +74,11 @@
 //   }
 // }
 
-// @mixin vp-1280 {
-//   @media (min-width: $vp-1280) {
-//     @content;
-//   }
-// }
+//@mixin vp-1280 {
+//  @media (min-width: $vp-1280) {
+//    @content;
+//  }
+//}
 
 @mixin vp-1024-2dppx {
   @media (min-width: $vp-1024) and (min-resolution: 2dppx) {

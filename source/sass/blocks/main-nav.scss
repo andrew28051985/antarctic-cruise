@@ -40,12 +40,13 @@
 */
   &--footer {
     @include vp-767 {
-      margin-bottom: 9px;
+      margin-bottom: -3px;
     }
 
     &:last-child {
       @include vp-767 {
-        margin-bottom: 21px;
+        margin-top: 9px;
+        margin-bottom: 14px;
       }
     }
   }
